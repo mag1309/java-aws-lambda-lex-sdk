@@ -3,7 +3,7 @@
 This sample code contains Java API for Lambda function response format for Amazon Lex. This code is based on 
 https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html#using-lambda-response-format.
 
-This code will help programmer to create bot AWS Lex using AWS Lambda. 
+This code will help programmer to create bot on AWS Lex platform using AWS Lambda. 
 
 == How to install JAR locally
 
