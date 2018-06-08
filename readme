@@ -16,3 +16,10 @@ This code will help programmer to create bot AWS Lex using AWS Lambda.
 
     curl -O -L https://github.com/mag1309/java-aws-lex-api/releases/download/1.0/java-lex-core-1.0.jar
     mvn install:install-file -Dfile=./java-lex-core-1.0.jar -DgroupId=com.ai.chatbot.framework -DartifactId=java-lex-core -Dversion=1.0 -Dpackaging=jar
+    
+    Later, Use following maven dependency
+    <dependency>
+    	<groupId>com.ai.chatbot.framework</groupId>
+    	<artifactId>java-lex-core</artifactId>
+    	<version>1.0</version>
+	 </dependency>
