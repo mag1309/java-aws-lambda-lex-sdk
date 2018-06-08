@@ -1,0 +1,25 @@
+== Lambda Lex Request/Response Java API
+
+This sample code contains Java API for Lambda function response format for Amazon Lex. This code is based on 
+https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html#using-lambda-response-format.
+
+This code will help programmer to create bot AWS Lex using AWS Lambda. 
+
+== How to install JAR locally
+
+. Clone the repo and build the JAR file:
+
+    git clone https://github.com/mag1309/java-aws-lex-api
+    mvn package
+
+. Install the JAR to maven:
+
+    curl -O -L https://github.com/mag1309/java-aws-lex-api/releases/download/1.0/java-lex-core-1.0.jar
+    mvn install:install-file -Dfile=./java-lex-core-1.0.jar -DgroupId=com.ai.chatbot.framework -DartifactId=java-lex-core -Dversion=1.0 -Dpackaging=jar
+    
+    Later, Use following maven dependency
+    <dependency>
+    	<groupId>com.ai.chatbot.framework</groupId>
+    	<artifactId>java-lex-core</artifactId>
+    	<version>1.0</version>
+	 </dependency>
