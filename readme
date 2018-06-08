@@ -5,14 +5,14 @@ https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html#usin
 
 This code will help programmer to create bot AWS Lex using AWS Lambda. 
 
-== Hoe to install JAR locally
+== How to install JAR locally
 
 . Clone the repo and build the JAR file:
 
     git clone https://github.com/mag1309/java-aws-lex-api
     mvn package
 
-. Install the pre-built JAR to maven:
+. Install the JAR to maven:
 
     curl -O -L https://github.com/mag1309/java-aws-lex-api/releases/download/1.0/java-lex-core-1.0.jar
     mvn install:install-file -Dfile=./java-lex-core-1.0.jar -DgroupId=com.ai.chatbot.framework -DartifactId=java-lex-core -Dversion=1.0 -Dpackaging=jar
