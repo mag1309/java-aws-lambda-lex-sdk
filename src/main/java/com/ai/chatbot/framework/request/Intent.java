@@ -8,13 +8,13 @@ public class Intent {
     private String name;
     private Map<String, String> slots;
     private String confirmationStatus;
-    private Map<String, String> slotDetails;
+    private Map<String, Details> slotDetails;
 
-    public Map<String, String> getSlotDetails() {
+    public Map<String, Details> getSlotDetails() {
 		return slotDetails;
 	}
 
-    public void setSlotDetails(Map<String, String> slotDetails) {
+	public void setSlotDetails(Map<String, Details> slotDetails) {
 		this.slotDetails = slotDetails;
 	}
 
