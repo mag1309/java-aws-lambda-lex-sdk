@@ -14,13 +14,13 @@ Following is required to run this code:
 
 == How to install JAR locally
 
-1. clone this repository:
+Clone this repository:
 
 ```
 git clone https://github.com/mag1309/java-aws-lambda-lex-sdk.git
 ```
 
-2. Perform a Maven package to build the JAR files:
+Perform a Maven package to build the JAR files:
 
 ```
 mvn clean package
@@ -28,16 +28,19 @@ mvn clean package
 
 The JAR (java-lex-core-1.0.jar) will be used for Chatbot development.
 
-3. Install the JAR to maven:
+Install the JAR to maven:
 
 ```
 mvn install:install-file -Dfile=./java-lex-core-1.0.jar -DgroupId=com.ai.chatbot.framework -DartifactId=java-lex-core -Dversion=1.0 -Dpackaging=jar
 
 ```
     
-4. Use following maven dependency in POM.XML for ChatBot development
+Use following maven dependency in POM.XML for ChatBot development
+
+```
 	<dependency>
     		<groupId>com.ai.chatbot.framework</groupId>
     		<artifactId>java-lex-core</artifactId>
     		<version>1.0</version>
 	</dependency>
+```
