@@ -5,21 +5,39 @@ https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html#usin
 
 This code will help programmer to create bot on AWS Lex platform using AWS Lambda. 
 
+== Prerequisites
+
+Following is required to run this code:
+
+* Java 8
+* Maven 3+
+
 == How to install JAR locally
 
-. Clone the repo and build the JAR file:
+1. clone this repository:
 
-    git clone https://github.com/mag1309/java-aws-lex-api
-    mvn package
+```
+git clone https://github.com/mag1309/java-aws-lambda-lex-sdk.git
+```
 
-. Install the JAR to maven:
+2. Perform a Maven package to build the JAR files:
 
-    curl -O -L https://github.com/mag1309/java-aws-lex-api/releases/download/1.0/java-lex-core-1.0.jar
-    mvn install:install-file -Dfile=./java-lex-core-1.0.jar -DgroupId=com.ai.chatbot.framework -DartifactId=java-lex-core -Dversion=1.0 -Dpackaging=jar
+```
+mvn clean package
+```
+
+The JAR (java-lex-core-1.0.jar) will be used for Chatbot development.
+
+3. Install the JAR to maven:
+
+```
+mvn install:install-file -Dfile=./java-lex-core-1.0.jar -DgroupId=com.ai.chatbot.framework -DartifactId=java-lex-core -Dversion=1.0 -Dpackaging=jar
+
+```
     
-    Later, Use following maven dependency
-    <dependency>
-    	<groupId>com.ai.chatbot.framework</groupId>
-    	<artifactId>java-lex-core</artifactId>
-    	<version>1.0</version>
-	 </dependency>
+4. Use following maven dependency in POM.XML for ChatBot development
+	<dependency>
+    		<groupId>com.ai.chatbot.framework</groupId>
+    		<artifactId>java-lex-core</artifactId>
+    		<version>1.0</version>
+	</dependency>
