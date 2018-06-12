@@ -1,13 +1,12 @@
 == Lambda Lex Request/Response Java API
 
-This sample code contains Java API for Lambda function response format for Amazon Lex. This code is based on 
-https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html#using-lambda-response-format.
+This SDK contains Java code for chatbot development via AWS Lex platform using AWS Lambda function. Lex Request/Response format is based on https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html#using-lambda-response-format.
 
-This code will help programmer to create bot on AWS Lex platform using AWS Lambda. 
+This SDK will help programmer to focus on Chatbot core logic and minimize the boiler plate code for chatbot development on AWS Lex-Lambda platform. 
 
 == Prerequisites
 
-Following is required to run this code:
+Following are required to run this code:
 
 * Java 8
 * Maven 3+
@@ -38,9 +37,10 @@ mvn install:install-file -Dfile=./java-lex-core-1.0.jar -DgroupId=com.ai.chatbot
 Use following maven dependency in POM.XML for ChatBot development
 
 ```
-	<dependency>
-    		<groupId>com.ai.chatbot.framework</groupId>
-    		<artifactId>java-lex-core</artifactId>
-    		<version>1.0</version>
-	</dependency>
+<dependency>
+    	<groupId>com.ai.chatbot.framework</groupId>
+    	<artifactId>java-lex-core</artifactId>
+  	<version>1.0</version>
+</dependency>
 ```
+
