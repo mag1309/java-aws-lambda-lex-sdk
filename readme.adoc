@@ -1,4 +1,4 @@
-== Lambda Lex Request/Response Java API
+== AWS Lambda Lex Request/Response Java SDK
 
 This SDK contains Java code for chatbot development via AWS Lex platform using AWS Lambda function. Lex Request/Response format is based on https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html#using-lambda-response-format.
 
